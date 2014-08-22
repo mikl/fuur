@@ -1,0 +1,17 @@
+<?php
+/**
+ * @file
+ * Install, update and uninstall functions for the fuur installation profile.
+ */
+
+/**
+ * Implements hook_install().
+ *
+ * Performs actions to set up the site for this profile.
+ *
+ * @see system_install()
+ */
+function fuur_install() {
+  // Don't allow site visitors to create new accounts.
+  variable_set('user_register', USER_REGISTER_ADMINISTRATORS_ONLY);
+}

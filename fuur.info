@@ -1,0 +1,7 @@
+name = Füür
+description = 'Simple Drupal install profile for fire department websites.'
+core: 7.x
+dependencies[] = block
+dependencies[] = dblog
+dependencies[] = node
+dependencies[] = toolbar
