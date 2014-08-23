@@ -1,0 +1,15 @@
+name = Füür base
+description = Base content types and configuration for Füür.
+core = 7.x
+package = Füür
+dependencies[] = features
+dependencies[] = image
+dependencies[] = text
+features[features_api][] = api:2
+features[field_base][] = fuur_base_body
+features[field_base][] = fuur_base_images
+features[field_instance][] = node-fuur_news-fuur_base_body
+features[field_instance][] = node-fuur_news-fuur_base_images
+features[field_instance][] = node-fuur_page-fuur_base_body
+features[node][] = fuur_news
+features[node][] = fuur_page

@@ -1,0 +1,31 @@
+<?php
+/**
+ * @file
+ * fuur_base.features.inc
+ */
+
+/**
+ * Implements hook_node_info().
+ */
+function fuur_base_node_info() {
+  $items = array(
+    'fuur_news' => array(
+      'name' => t('News'),
+      'base' => 'node_content',
+      'description' => t('News story for the fire department.'),
+      'has_title' => '1',
+      'title_label' => t('Title'),
+      'help' => '',
+    ),
+    'fuur_page' => array(
+      'name' => t('Page'),
+      'base' => 'node_content',
+      'description' => t('Standard page for hierarchial content.'),
+      'has_title' => '1',
+      'title_label' => t('Title'),
+      'help' => '',
+    ),
+  );
+  drupal_alter('node_info', $items);
+  return $items;
+}
