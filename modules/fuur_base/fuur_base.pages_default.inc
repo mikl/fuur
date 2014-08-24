@@ -30,7 +30,7 @@ function fuur_base_default_page_manager_handlers() {
     'relationships' => array(),
   );
   $display = new panels_display();
-  $display->layout = 'sample_layout';
+  $display->layout = 'fuur_site_template';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
@@ -38,6 +38,10 @@ function fuur_base_default_page_manager_handlers() {
       'first' => NULL,
       'second' => NULL,
       'third' => NULL,
+      'header' => NULL,
+      'content' => NULL,
+      'footer' => NULL,
+      'closure' => NULL,
     ),
   );
   $display->cache = array();

@@ -4,4 +4,14 @@
  * Code for the Füür base feature.
  */
 
+/**
+ * Implements hook_ctools_plugin_directory().
+ */
+function fuur_base_ctools_plugin_directory($owner, $plugin_type) {
+  // This module provides Panels layout plugins.
+  if ($owner == 'panels' && $plugin_type == 'layouts') {
+    return "plugins/$plugin_type";
+  }
+}
+
 include_once 'fuur_base.features.inc';
