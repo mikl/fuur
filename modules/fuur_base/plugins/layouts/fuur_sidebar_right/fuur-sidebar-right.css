@@ -1,0 +1,21 @@
+/**
+ * @file
+ * Layout with sidebar on the right.
+ */
+
+
+.fuur-layout-sidebar-right {
+  margin-bottom: 1em;
+}
+
+.fuur-layout-sidebar-right >.layout-main {
+  min-height: 1px;
+  width: 66.66%;
+  float: left;
+}
+
+.fuur-layout-sidebar-right >.layout-sidebar {
+  min-height: 1px;
+  width: 33.33%;
+  float: left;
+}
