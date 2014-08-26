@@ -14,7 +14,11 @@ projects[ctools][version] = "1.4"
 
 projects[cache_actions][version] = "2.0-alpha5"
 
+projects[date][version] = "2.8"
+
 projects[devel][version] = "1.5"
+
+projects[diff][version] = "3.2"
 
 projects[elements][version] = "1.4"
 
