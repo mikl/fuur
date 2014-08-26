@@ -18,6 +18,7 @@ features[field_base][] = fuur_base_images
 features[field_instance][] = node-fuur_news-fuur_base_body
 features[field_instance][] = node-fuur_news-fuur_base_images
 features[field_instance][] = node-fuur_page-fuur_base_body
+features[image][] = fuur_fullwidth
 features[node][] = fuur_news
 features[node][] = fuur_page
 features[page_manager_handlers][] = site_template__fuur_default

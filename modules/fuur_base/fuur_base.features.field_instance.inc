@@ -71,8 +71,8 @@ function fuur_base_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
-          'image_link' => '',
-          'image_style' => 'thumbnail',
+          'image_link' => 'content',
+          'image_style' => 'fuur_fullwidth',
         ),
         'type' => 'image',
         'weight' => 0,
