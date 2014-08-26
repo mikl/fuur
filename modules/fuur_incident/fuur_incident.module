@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Füür incident feature.
+ */
+
+include_once 'fuur_incident.features.inc';
