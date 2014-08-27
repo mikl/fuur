@@ -4,7 +4,7 @@
  * Site Template layout for Panels Everywhere.
  */
 ?>
-<div class="fuur-layout-sidebar-right clearfix">
+<div class="fuur-layout-sidebar-right">
 
   <div class="layout-main">
     <?php print render($content['main']); ?>
