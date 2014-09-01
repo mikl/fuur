@@ -43,12 +43,12 @@ function fuur_front_page_default_page_manager_pages() {
     'relationships' => array(),
   );
   $display = new panels_display();
-  $display->layout = 'fuur_sidebar_right';
+  $display->layout = 'fuur_layout_plain';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
       'default' => NULL,
-      'main' => NULL,
+      'content' => NULL,
       'sidebar' => NULL,
     ),
   );
@@ -59,7 +59,7 @@ function fuur_front_page_default_page_manager_pages() {
   $display->panels = array();
     $pane = new stdClass();
     $pane->pid = 'new-0587d28b-3143-4909-9f27-c7964f0d16ca';
-    $pane->panel = 'main';
+    $pane->panel = 'content';
     $pane->type = 'views_panes';
     $pane->subtype = 'fuur_front_page_teasers-panel_pane_list';
     $pane->shown = TRUE;
@@ -80,7 +80,7 @@ function fuur_front_page_default_page_manager_pages() {
     $pane->locks = array();
     $pane->uuid = '0587d28b-3143-4909-9f27-c7964f0d16ca';
     $display->content['new-0587d28b-3143-4909-9f27-c7964f0d16ca'] = $pane;
-    $display->panels['main'][0] = 'new-0587d28b-3143-4909-9f27-c7964f0d16ca';
+    $display->panels['content'][0] = 'new-0587d28b-3143-4909-9f27-c7964f0d16ca';
     $pane = new stdClass();
     $pane->pid = 'new-8d509087-8587-41af-b9b3-a0a7dac63819';
     $pane->panel = 'sidebar';
