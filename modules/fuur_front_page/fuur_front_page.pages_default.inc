@@ -16,7 +16,10 @@ function fuur_front_page_default_page_manager_pages() {
   $page->admin_title = 'Füür front page';
   $page->admin_description = 'Front page layout for Füür.';
   $page->path = 'fuur_front_page';
-  $page->access = array();
+  $page->access = array(
+    'type' => 'none',
+    'settings' => NULL,
+  );
   $page->menu = array();
   $page->arguments = array();
   $page->conf = array(
