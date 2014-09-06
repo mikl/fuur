@@ -58,10 +58,19 @@ projects[transliteration][version] = "3.2"
 
 projects[views][version] = "3.8"
 
+projects[wysiwyg][type] = module
+projects[wysiwyg][download][type] = git
+projects[wysiwyg][download][url] = http://git.drupal.org/project/wysiwyg.git
+projects[wysiwyg][download][revision] = 37dc07db900cac540f30bca5d90bb75951cc314f
+
 ; Themes
 projects[aurora][version] = "3.4"
 
 ; Libraries
+
+libraries[ckeditor][type] = "libraries"
+libraries[ckeditor][download][type] = "file"
+libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.4.4/ckeditor_4.4.4_full.zip"
 
 libraries[wvega-timepicker][type] = "libraries"
 libraries[wvega-timepicker][download][type] = "file"
