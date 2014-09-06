@@ -24,6 +24,7 @@ features[node][] = fuur_news
 features[node][] = fuur_page
 features[variable][] = field_bundle_settings_node__fuur_news
 features[variable][] = field_bundle_settings_node__fuur_page
+features[variable][] = install_profile
 features[variable][] = jquery_update_jquery_admin_version
 features[variable][] = jquery_update_jquery_version
 features[variable][] = language_content_type_fuur_news

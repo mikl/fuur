@@ -61,9 +61,16 @@ function fuur_install_tasks() {
 function fuur_install_additional_modules() {
   $modules = array(
     'admin_menu',
+    'borealis',
+    'diff',
+    'entity',
+    'fences',
     'fuur_base',
     'fuur_incident',
     'fuur_front_page',
+    'html5_tools',
+    'magic',
+    'module_filter',
   );
 
   // Resolve the dependencies now, so that module_enable() doesn't need
