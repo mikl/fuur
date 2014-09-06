@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Füür sponsor feature.
+ */
+
+include_once 'fuur_sponsor.features.inc';
