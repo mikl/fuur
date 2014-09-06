@@ -60,3 +60,9 @@ projects[views][version] = "3.8"
 
 ; Themes
 projects[aurora][version] = "3.4"
+
+; Libraries
+
+libraries[wvega-timepicker][type] = "libraries"
+libraries[wvega-timepicker][download][type] = "file"
+libraries[wvega-timepicker][download][url] = "https://github.com/wvega/timepicker/archive/master.tar.gz"
