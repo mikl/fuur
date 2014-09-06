@@ -25,16 +25,16 @@ function fuur_sponsor_views_default_views() {
   $handler->display->display_options['title'] = 'Sponsors';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
-  $handler->display->display_options['cache']['type'] = 'time';
-  $handler->display->display_options['cache']['results_lifespan'] = '3600';
-  $handler->display->display_options['cache']['results_lifespan_custom'] = '0';
-  $handler->display->display_options['cache']['output_lifespan'] = '3600';
-  $handler->display->display_options['cache']['output_lifespan_custom'] = '0';
+  $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
-  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['style_plugin'] = 'list';
+  $handler->display->display_options['style_options']['default_row_class'] = FALSE;
+  $handler->display->display_options['style_options']['row_class_special'] = FALSE;
+  $handler->display->display_options['style_options']['class'] = 'fuur-sponsor-list';
+  $handler->display->display_options['style_options']['wrapper_class'] = '';
   $handler->display->display_options['row_plugin'] = 'fields';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
@@ -63,7 +63,6 @@ function fuur_sponsor_views_default_views() {
   $handler->display->display_options['fields']['fuur_sponsor_logo']['table'] = 'field_data_fuur_sponsor_logo';
   $handler->display->display_options['fields']['fuur_sponsor_logo']['field'] = 'fuur_sponsor_logo';
   $handler->display->display_options['fields']['fuur_sponsor_logo']['label'] = '';
-  $handler->display->display_options['fields']['fuur_sponsor_logo']['alter']['make_link'] = TRUE;
   $handler->display->display_options['fields']['fuur_sponsor_logo']['alter']['path'] = '[fuur_sponsor_website]';
   $handler->display->display_options['fields']['fuur_sponsor_logo']['alter']['alt'] = '[title]';
   $handler->display->display_options['fields']['fuur_sponsor_logo']['alter']['link_class'] = 'fuur-sponsor-link';
