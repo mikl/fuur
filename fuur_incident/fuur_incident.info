@@ -7,6 +7,7 @@ dependencies[] = date
 dependencies[] = features
 dependencies[] = fuur_base
 dependencies[] = image
+dependencies[] = media
 dependencies[] = strongarm
 dependencies[] = text
 features[ctools][] = strongarm:strongarm:1

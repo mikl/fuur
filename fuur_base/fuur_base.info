@@ -7,6 +7,7 @@ dependencies[] = date_popup
 dependencies[] = features
 dependencies[] = image
 dependencies[] = jquery_update
+dependencies[] = media
 dependencies[] = pathauto
 dependencies[] = redirect
 dependencies[] = strongarm

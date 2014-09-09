@@ -33,6 +33,7 @@ function fuur_base_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
+    'fences_wrapper' => 'div',
     'field_name' => 'fuur_base_body',
     'label' => 'Body',
     'required' => 0,
@@ -44,7 +45,7 @@ function fuur_base_field_default_field_instances() {
       'active' => 1,
       'module' => 'text',
       'settings' => array(
-        'rows' => 10,
+        'rows' => 20,
       ),
       'type' => 'text_textarea',
       'weight' => 0,
@@ -95,12 +96,20 @@ function fuur_base_field_default_field_instances() {
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'image',
+      'module' => 'media',
       'settings' => array(
+        'allowed_schemes' => array(
+          0 => 'public',
+          1 => 'private',
+        ),
+        'allowed_types' => array(
+          0 => 'image',
+        ),
+        'browser_plugins' => array(),
         'preview_image_style' => 'large',
         'progress_indicator' => 'throbber',
       ),
-      'type' => 'image_image',
+      'type' => 'media_generic',
       'weight' => -2,
     ),
   );
@@ -127,6 +136,7 @@ function fuur_base_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
+    'fences_wrapper' => 'div',
     'field_name' => 'fuur_base_body',
     'label' => 'Body',
     'required' => 0,
@@ -138,7 +148,7 @@ function fuur_base_field_default_field_instances() {
       'active' => 1,
       'module' => 'text',
       'settings' => array(
-        'rows' => 10,
+        'rows' => 20,
       ),
       'type' => 'text_textarea',
       'weight' => -3,
