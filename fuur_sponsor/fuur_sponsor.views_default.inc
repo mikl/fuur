@@ -106,6 +106,19 @@ function fuur_sponsor_views_default_views() {
   $handler->display->display_options['allow']['title_override'] = 0;
   $handler->display->display_options['allow']['exposed_form'] = 0;
   $handler->display->display_options['allow']['fields_override'] = 0;
+  $translatables['fuur_sponsor_list'] = array(
+    t('Master'),
+    t('Sponsoren'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('[title]'),
+    t('Content pane'),
+    t('View panes'),
+  );
   $export['fuur_sponsor_list'] = $view;
 
   return $export;

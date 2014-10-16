@@ -234,6 +234,46 @@ function fuur_base_user_default_permissions() {
     'module' => 'file_entity',
   );
 
+  // Exported permission: 'create fuur_news content'.
+  $permissions['create fuur_news content'] = array(
+    'name' => 'create fuur_news content',
+    'roles' => array(
+      'admin' => 'admin',
+      'developer' => 'developer',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'create fuur_page content'.
+  $permissions['create fuur_page content'] = array(
+    'name' => 'create fuur_page content',
+    'roles' => array(
+      'admin' => 'admin',
+      'developer' => 'developer',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete any fuur_news content'.
+  $permissions['delete any fuur_news content'] = array(
+    'name' => 'delete any fuur_news content',
+    'roles' => array(
+      'admin' => 'admin',
+      'developer' => 'developer',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete any fuur_page content'.
+  $permissions['delete any fuur_page content'] = array(
+    'name' => 'delete any fuur_page content',
+    'roles' => array(
+      'admin' => 'admin',
+      'developer' => 'developer',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'delete any image files'.
   $permissions['delete any image files'] = array(
     'name' => 'delete any image files',
@@ -241,6 +281,26 @@ function fuur_base_user_default_permissions() {
       'developer' => 'developer',
     ),
     'module' => 'file_entity',
+  );
+
+  // Exported permission: 'delete own fuur_news content'.
+  $permissions['delete own fuur_news content'] = array(
+    'name' => 'delete own fuur_news content',
+    'roles' => array(
+      'admin' => 'admin',
+      'developer' => 'developer',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete own fuur_page content'.
+  $permissions['delete own fuur_page content'] = array(
+    'name' => 'delete own fuur_page content',
+    'roles' => array(
+      'admin' => 'admin',
+      'developer' => 'developer',
+    ),
+    'module' => 'node',
   );
 
   // Exported permission: 'delete own image files'.
@@ -288,6 +348,26 @@ function fuur_base_user_default_permissions() {
     'module' => 'file_entity',
   );
 
+  // Exported permission: 'edit any fuur_news content'.
+  $permissions['edit any fuur_news content'] = array(
+    'name' => 'edit any fuur_news content',
+    'roles' => array(
+      'admin' => 'admin',
+      'developer' => 'developer',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'edit any fuur_page content'.
+  $permissions['edit any fuur_page content'] = array(
+    'name' => 'edit any fuur_page content',
+    'roles' => array(
+      'admin' => 'admin',
+      'developer' => 'developer',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'edit any image files'.
   $permissions['edit any image files'] = array(
     'name' => 'edit any image files',
@@ -296,6 +376,23 @@ function fuur_base_user_default_permissions() {
       'developer' => 'developer',
     ),
     'module' => 'file_entity',
+  );
+
+  // Exported permission: 'edit own fuur_news content'.
+  $permissions['edit own fuur_news content'] = array(
+    'name' => 'edit own fuur_news content',
+    'roles' => array(
+      'admin' => 'admin',
+      'developer' => 'developer',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'edit own fuur_page content'.
+  $permissions['edit own fuur_page content'] = array(
+    'name' => 'edit own fuur_page content',
+    'roles' => array(),
+    'module' => 'node',
   );
 
   // Exported permission: 'edit own image files'.
@@ -321,16 +418,6 @@ function fuur_base_user_default_permissions() {
     'name' => 'select account cancellation method',
     'roles' => array(),
     'module' => 'user',
-  );
-
-  // Exported permission: 'use text format fuur_wysiwyg'.
-  $permissions['use text format fuur_wysiwyg'] = array(
-    'name' => 'use text format fuur_wysiwyg',
-    'roles' => array(
-      'admin' => 'admin',
-      'developer' => 'developer',
-    ),
-    'module' => 'filter',
   );
 
   // Exported permission: 'view the administration theme'.

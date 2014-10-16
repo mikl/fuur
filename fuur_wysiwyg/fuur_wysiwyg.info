@@ -11,4 +11,6 @@ dependencies[] = media_wysiwyg_view_mode
 dependencies[] = wysiwyg
 features[features_api][] = api:2
 features[filter][] = fuur_wysiwyg
+features[user_permission][] = administer media wysiwyg view mode
+features[user_permission][] = use text format fuur_wysiwyg
 features[wysiwyg][] = fuur_wysiwyg
