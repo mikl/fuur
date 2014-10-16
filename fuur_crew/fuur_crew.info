@@ -35,6 +35,7 @@ features[field_instance][] = user-user-fuur_crew_portrait
 features[field_instance][] = user-user-fuur_crew_public_profile
 features[field_instance][] = user-user-fuur_crew_rank
 features[field_instance][] = user-user-fuur_crew_title
+features[image][] = fuur_crew_portrait
 features[taxonomy][] = fuur_crew_organisation
 features[taxonomy][] = fuur_crew_rank
 features[views_view][] = fuur_crew_public_list
