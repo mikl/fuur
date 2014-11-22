@@ -90,7 +90,7 @@ function fuur_crew_views_default_views() {
   $handler->display->display_options['fields']['fuur_crew_first_name']['field'] = 'fuur_crew_first_name';
   $handler->display->display_options['fields']['fuur_crew_first_name']['label'] = '';
   $handler->display->display_options['fields']['fuur_crew_first_name']['element_type'] = 'span';
-  $handler->display->display_options['fields']['fuur_crew_first_name']['element_class'] = 'last-name';
+  $handler->display->display_options['fields']['fuur_crew_first_name']['element_class'] = 'first-name';
   $handler->display->display_options['fields']['fuur_crew_first_name']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['fuur_crew_first_name']['element_wrapper_type'] = '0';
   $handler->display->display_options['fields']['fuur_crew_first_name']['element_default_classes'] = FALSE;
@@ -203,7 +203,7 @@ function fuur_crew_views_default_views() {
   $handler->display->display_options['fields']['fuur_crew_first_name']['field'] = 'fuur_crew_first_name';
   $handler->display->display_options['fields']['fuur_crew_first_name']['label'] = '';
   $handler->display->display_options['fields']['fuur_crew_first_name']['element_type'] = 'span';
-  $handler->display->display_options['fields']['fuur_crew_first_name']['element_class'] = 'last-name';
+  $handler->display->display_options['fields']['fuur_crew_first_name']['element_class'] = 'first-name';
   $handler->display->display_options['fields']['fuur_crew_first_name']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['fuur_crew_first_name']['element_wrapper_type'] = '0';
   $handler->display->display_options['fields']['fuur_crew_first_name']['element_default_classes'] = FALSE;
