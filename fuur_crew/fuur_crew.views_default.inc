@@ -42,6 +42,12 @@ function fuur_crew_views_default_views() {
   $handler->display->display_options['relationships']['fuur_crew_rank_tid']['table'] = 'field_data_fuur_crew_rank';
   $handler->display->display_options['relationships']['fuur_crew_rank_tid']['field'] = 'fuur_crew_rank_tid';
   $handler->display->display_options['relationships']['fuur_crew_rank_tid']['label'] = 'Crew rank';
+  /* Relationship: Field collection item: Organisation (fuur_crew_organisation) */
+  $handler->display->display_options['relationships']['fuur_crew_organisation_tid']['id'] = 'fuur_crew_organisation_tid';
+  $handler->display->display_options['relationships']['fuur_crew_organisation_tid']['table'] = 'field_data_fuur_crew_organisation';
+  $handler->display->display_options['relationships']['fuur_crew_organisation_tid']['field'] = 'fuur_crew_organisation_tid';
+  $handler->display->display_options['relationships']['fuur_crew_organisation_tid']['label'] = 'Crew organisation';
+  $handler->display->display_options['relationships']['fuur_crew_organisation_tid']['required'] = TRUE;
   /* Field: Field collection item: Portrait */
   $handler->display->display_options['fields']['fuur_crew_portrait']['id'] = 'fuur_crew_portrait';
   $handler->display->display_options['fields']['fuur_crew_portrait']['table'] = 'field_data_fuur_crew_portrait';
@@ -111,19 +117,18 @@ function fuur_crew_views_default_views() {
   $handler->display->display_options['sorts']['fuur_crew_first_name_value']['id'] = 'fuur_crew_first_name_value';
   $handler->display->display_options['sorts']['fuur_crew_first_name_value']['table'] = 'field_data_fuur_crew_first_name';
   $handler->display->display_options['sorts']['fuur_crew_first_name_value']['field'] = 'fuur_crew_first_name_value';
-  /* Contextual filter: Organisation */
-  $handler->display->display_options['arguments']['fuur_crew_organisation_tid']['id'] = 'fuur_crew_organisation_tid';
-  $handler->display->display_options['arguments']['fuur_crew_organisation_tid']['table'] = 'field_data_fuur_crew_organisation';
-  $handler->display->display_options['arguments']['fuur_crew_organisation_tid']['field'] = 'fuur_crew_organisation_tid';
-  $handler->display->display_options['arguments']['fuur_crew_organisation_tid']['ui_name'] = 'Organisation';
-  $handler->display->display_options['arguments']['fuur_crew_organisation_tid']['default_action'] = 'empty';
-  $handler->display->display_options['arguments']['fuur_crew_organisation_tid']['exception']['value'] = '';
-  $handler->display->display_options['arguments']['fuur_crew_organisation_tid']['exception']['title'] = 'Alle';
-  $handler->display->display_options['arguments']['fuur_crew_organisation_tid']['title_enable'] = TRUE;
-  $handler->display->display_options['arguments']['fuur_crew_organisation_tid']['default_argument_type'] = 'fixed';
-  $handler->display->display_options['arguments']['fuur_crew_organisation_tid']['summary']['number_of_records'] = '0';
-  $handler->display->display_options['arguments']['fuur_crew_organisation_tid']['summary']['format'] = 'default_summary';
-  $handler->display->display_options['arguments']['fuur_crew_organisation_tid']['summary_options']['items_per_page'] = '25';
+  /* Contextual filter: Taxonomy term: Term ID */
+  $handler->display->display_options['arguments']['tid']['id'] = 'tid';
+  $handler->display->display_options['arguments']['tid']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['arguments']['tid']['field'] = 'tid';
+  $handler->display->display_options['arguments']['tid']['relationship'] = 'fuur_crew_organisation_tid';
+  $handler->display->display_options['arguments']['tid']['default_action'] = 'not found';
+  $handler->display->display_options['arguments']['tid']['title_enable'] = TRUE;
+  $handler->display->display_options['arguments']['tid']['title'] = '%1';
+  $handler->display->display_options['arguments']['tid']['default_argument_type'] = 'fixed';
+  $handler->display->display_options['arguments']['tid']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['tid']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['tid']['summary_options']['items_per_page'] = '25';
   /* Filter criterion: Field collection item: Field name */
   $handler->display->display_options['filters']['field_name']['id'] = 'field_name';
   $handler->display->display_options['filters']['field_name']['table'] = 'field_collection_item';
@@ -134,14 +139,23 @@ function fuur_crew_views_default_views() {
 
   /* Display: Staff portraits */
   $handler = $view->new_display('panel_pane', 'Staff portraits', 'staff_portraits_pane');
+  $handler->display->display_options['allow']['use_pager'] = 0;
+  $handler->display->display_options['allow']['items_per_page'] = 0;
+  $handler->display->display_options['allow']['offset'] = 0;
+  $handler->display->display_options['allow']['link_to_view'] = 0;
+  $handler->display->display_options['allow']['more_link'] = 0;
+  $handler->display->display_options['allow']['path_override'] = 0;
+  $handler->display->display_options['allow']['title_override'] = 'title_override';
+  $handler->display->display_options['allow']['exposed_form'] = 0;
+  $handler->display->display_options['allow']['fields_override'] = 0;
   $handler->display->display_options['argument_input'] = array(
-    'fuur_crew_organisation_tid' => array(
+    'tid' => array(
       'type' => 'user',
-      'context' => 'entity:node.author',
+      'context' => 'entity:field_collection_item.archived',
       'context_optional' => 0,
       'panel' => '0',
       'fixed' => '',
-      'label' => 'Organisation term ID',
+      'label' => 'Organisation Term ID',
     ),
   );
   $translatables['fuur_crew_public_profiles'] = array(
@@ -153,7 +167,9 @@ function fuur_crew_views_default_views() {
     t('Asc'),
     t('Desc'),
     t('Crew rank'),
-    t('Alle'),
+    t('Crew organisation'),
+    t('All'),
+    t('%1'),
     t('Staff portraits'),
     t('View panes'),
   );
