@@ -74,16 +74,6 @@ function fuur_crew_views_default_views() {
   $handler->display->display_options['fields']['fuur_crew_rank_abbreviation']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['fuur_crew_rank_abbreviation']['element_wrapper_type'] = '0';
   $handler->display->display_options['fields']['fuur_crew_rank_abbreviation']['element_default_classes'] = FALSE;
-  /* Field: Field collection item: Last name */
-  $handler->display->display_options['fields']['fuur_crew_last_name']['id'] = 'fuur_crew_last_name';
-  $handler->display->display_options['fields']['fuur_crew_last_name']['table'] = 'field_data_fuur_crew_last_name';
-  $handler->display->display_options['fields']['fuur_crew_last_name']['field'] = 'fuur_crew_last_name';
-  $handler->display->display_options['fields']['fuur_crew_last_name']['label'] = '';
-  $handler->display->display_options['fields']['fuur_crew_last_name']['element_type'] = 'span';
-  $handler->display->display_options['fields']['fuur_crew_last_name']['element_class'] = 'last-name';
-  $handler->display->display_options['fields']['fuur_crew_last_name']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['fuur_crew_last_name']['element_wrapper_type'] = '0';
-  $handler->display->display_options['fields']['fuur_crew_last_name']['element_default_classes'] = FALSE;
   /* Field: Field collection item: First name */
   $handler->display->display_options['fields']['fuur_crew_first_name']['id'] = 'fuur_crew_first_name';
   $handler->display->display_options['fields']['fuur_crew_first_name']['table'] = 'field_data_fuur_crew_first_name';
@@ -94,6 +84,16 @@ function fuur_crew_views_default_views() {
   $handler->display->display_options['fields']['fuur_crew_first_name']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['fuur_crew_first_name']['element_wrapper_type'] = '0';
   $handler->display->display_options['fields']['fuur_crew_first_name']['element_default_classes'] = FALSE;
+  /* Field: Field collection item: Last name */
+  $handler->display->display_options['fields']['fuur_crew_last_name']['id'] = 'fuur_crew_last_name';
+  $handler->display->display_options['fields']['fuur_crew_last_name']['table'] = 'field_data_fuur_crew_last_name';
+  $handler->display->display_options['fields']['fuur_crew_last_name']['field'] = 'fuur_crew_last_name';
+  $handler->display->display_options['fields']['fuur_crew_last_name']['label'] = '';
+  $handler->display->display_options['fields']['fuur_crew_last_name']['element_type'] = 'span';
+  $handler->display->display_options['fields']['fuur_crew_last_name']['element_class'] = 'last-name';
+  $handler->display->display_options['fields']['fuur_crew_last_name']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['fuur_crew_last_name']['element_wrapper_type'] = '0';
+  $handler->display->display_options['fields']['fuur_crew_last_name']['element_default_classes'] = FALSE;
   /* Field: Field collection item: Title */
   $handler->display->display_options['fields']['fuur_crew_title']['id'] = 'fuur_crew_title';
   $handler->display->display_options['fields']['fuur_crew_title']['table'] = 'field_data_fuur_crew_title';
@@ -187,16 +187,6 @@ function fuur_crew_views_default_views() {
   $handler->display->display_options['fields']['fuur_crew_rank_abbreviation']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['fuur_crew_rank_abbreviation']['element_wrapper_type'] = '0';
   $handler->display->display_options['fields']['fuur_crew_rank_abbreviation']['element_default_classes'] = FALSE;
-  /* Field: Field collection item: Last name */
-  $handler->display->display_options['fields']['fuur_crew_last_name']['id'] = 'fuur_crew_last_name';
-  $handler->display->display_options['fields']['fuur_crew_last_name']['table'] = 'field_data_fuur_crew_last_name';
-  $handler->display->display_options['fields']['fuur_crew_last_name']['field'] = 'fuur_crew_last_name';
-  $handler->display->display_options['fields']['fuur_crew_last_name']['label'] = '';
-  $handler->display->display_options['fields']['fuur_crew_last_name']['element_type'] = 'span';
-  $handler->display->display_options['fields']['fuur_crew_last_name']['element_class'] = 'last-name';
-  $handler->display->display_options['fields']['fuur_crew_last_name']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['fuur_crew_last_name']['element_wrapper_type'] = '0';
-  $handler->display->display_options['fields']['fuur_crew_last_name']['element_default_classes'] = FALSE;
   /* Field: Field collection item: First name */
   $handler->display->display_options['fields']['fuur_crew_first_name']['id'] = 'fuur_crew_first_name';
   $handler->display->display_options['fields']['fuur_crew_first_name']['table'] = 'field_data_fuur_crew_first_name';
@@ -207,6 +197,16 @@ function fuur_crew_views_default_views() {
   $handler->display->display_options['fields']['fuur_crew_first_name']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['fuur_crew_first_name']['element_wrapper_type'] = '0';
   $handler->display->display_options['fields']['fuur_crew_first_name']['element_default_classes'] = FALSE;
+  /* Field: Field collection item: Last name */
+  $handler->display->display_options['fields']['fuur_crew_last_name']['id'] = 'fuur_crew_last_name';
+  $handler->display->display_options['fields']['fuur_crew_last_name']['table'] = 'field_data_fuur_crew_last_name';
+  $handler->display->display_options['fields']['fuur_crew_last_name']['field'] = 'fuur_crew_last_name';
+  $handler->display->display_options['fields']['fuur_crew_last_name']['label'] = '';
+  $handler->display->display_options['fields']['fuur_crew_last_name']['element_type'] = 'span';
+  $handler->display->display_options['fields']['fuur_crew_last_name']['element_class'] = 'last-name';
+  $handler->display->display_options['fields']['fuur_crew_last_name']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['fuur_crew_last_name']['element_wrapper_type'] = '0';
+  $handler->display->display_options['fields']['fuur_crew_last_name']['element_default_classes'] = FALSE;
   /* Field: Field collection item: Title */
   $handler->display->display_options['fields']['fuur_crew_title']['id'] = 'fuur_crew_title';
   $handler->display->display_options['fields']['fuur_crew_title']['table'] = 'field_data_fuur_crew_title';
