@@ -17,7 +17,6 @@ function fuur_incident_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'fuur_incident_datetime',
-    'foreign keys' => array(),
     'indexes' => array(),
     'locked' => 0,
     'module' => 'date',
@@ -47,14 +46,6 @@ function fuur_incident_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'fuur_incident_location',
-    'foreign keys' => array(
-      'format' => array(
-        'columns' => array(
-          'format' => 'format',
-        ),
-        'table' => 'filter_format',
-      ),
-    ),
     'indexes' => array(
       'format' => array(
         0 => 'format',

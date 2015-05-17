@@ -10,7 +10,8 @@
 function fuur_crew_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'field_collection_item-fuur_crew_public_profile-fuur_crew_first_name'
+  // Exported field_instance:
+  // 'field_collection_item-fuur_crew_public_profile-fuur_crew_first_name'
   $field_instances['field_collection_item-fuur_crew_public_profile-fuur_crew_first_name'] = array(
     'bundle' => 'fuur_crew_public_profile',
     'default_value' => NULL,
@@ -45,7 +46,8 @@ function fuur_crew_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'field_collection_item-fuur_crew_public_profile-fuur_crew_last_name'
+  // Exported field_instance:
+  // 'field_collection_item-fuur_crew_public_profile-fuur_crew_last_name'
   $field_instances['field_collection_item-fuur_crew_public_profile-fuur_crew_last_name'] = array(
     'bundle' => 'fuur_crew_public_profile',
     'default_value' => NULL,
@@ -80,7 +82,8 @@ function fuur_crew_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'field_collection_item-fuur_crew_public_profile-fuur_crew_organisation'
+  // Exported field_instance:
+  // 'field_collection_item-fuur_crew_public_profile-fuur_crew_organisation'
   $field_instances['field_collection_item-fuur_crew_public_profile-fuur_crew_organisation'] = array(
     'bundle' => 'fuur_crew_public_profile',
     'default_value' => NULL,
@@ -112,7 +115,8 @@ function fuur_crew_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'field_collection_item-fuur_crew_public_profile-fuur_crew_portrait'
+  // Exported field_instance:
+  // 'field_collection_item-fuur_crew_public_profile-fuur_crew_portrait'
   $field_instances['field_collection_item-fuur_crew_public_profile-fuur_crew_portrait'] = array(
     'bundle' => 'fuur_crew_public_profile',
     'deleted' => 0,
@@ -170,7 +174,8 @@ function fuur_crew_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'field_collection_item-fuur_crew_public_profile-fuur_crew_rank'
+  // Exported field_instance:
+  // 'field_collection_item-fuur_crew_public_profile-fuur_crew_rank'
   $field_instances['field_collection_item-fuur_crew_public_profile-fuur_crew_rank'] = array(
     'bundle' => 'fuur_crew_public_profile',
     'default_value' => NULL,
@@ -202,7 +207,8 @@ function fuur_crew_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'field_collection_item-fuur_crew_public_profile-fuur_crew_title'
+  // Exported field_instance:
+  // 'field_collection_item-fuur_crew_public_profile-fuur_crew_title'
   $field_instances['field_collection_item-fuur_crew_public_profile-fuur_crew_title'] = array(
     'bundle' => 'fuur_crew_public_profile',
     'default_value' => NULL,
@@ -237,7 +243,8 @@ function fuur_crew_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'taxonomy_term-fuur_crew_rank-fuur_crew_rank_abbreviation'
+  // Exported field_instance:
+  // 'taxonomy_term-fuur_crew_rank-fuur_crew_rank_abbreviation'
   $field_instances['taxonomy_term-fuur_crew_rank-fuur_crew_rank_abbreviation'] = array(
     'bundle' => 'fuur_crew_rank',
     'default_value' => NULL,

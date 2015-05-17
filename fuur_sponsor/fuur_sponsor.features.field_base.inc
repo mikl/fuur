@@ -17,14 +17,6 @@ function fuur_sponsor_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'fuur_sponsor_logo',
-    'foreign keys' => array(
-      'fid' => array(
-        'columns' => array(
-          'fid' => 'fid',
-        ),
-        'table' => 'file_managed',
-      ),
-    ),
     'indexes' => array(
       'fid' => array(
         0 => 'fid',
@@ -47,7 +39,6 @@ function fuur_sponsor_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'fuur_sponsor_website',
-    'foreign keys' => array(),
     'indexes' => array(),
     'locked' => 0,
     'module' => 'link',
