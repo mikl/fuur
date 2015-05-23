@@ -31,8 +31,13 @@ function fuur_base_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '5';
   $handler->display->display_options['pager']['options']['offset'] = '0';
-  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['style_plugin'] = 'list';
+  $handler->display->display_options['style_options']['default_row_class'] = FALSE;
+  $handler->display->display_options['style_options']['row_class_special'] = FALSE;
+  $handler->display->display_options['style_options']['class'] = 'fuur-news-list';
+  $handler->display->display_options['style_options']['wrapper_class'] = '';
   $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['row_options']['default_field_elements'] = FALSE;
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -41,27 +46,29 @@ function fuur_base_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_type'] = 'h4';
+  $handler->display->display_options['fields']['title']['element_class'] = 'title';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['element_wrapper_type'] = '0';
+  $handler->display->display_options['fields']['title']['element_default_classes'] = FALSE;
   /* Field: Content: Category */
   $handler->display->display_options['fields']['fuur_news_category']['id'] = 'fuur_news_category';
   $handler->display->display_options['fields']['fuur_news_category']['table'] = 'field_data_fuur_news_category';
   $handler->display->display_options['fields']['fuur_news_category']['field'] = 'fuur_news_category';
   $handler->display->display_options['fields']['fuur_news_category']['label'] = '';
-  $handler->display->display_options['fields']['fuur_news_category']['element_type'] = '0';
+  $handler->display->display_options['fields']['fuur_news_category']['element_type'] = 'span';
+  $handler->display->display_options['fields']['fuur_news_category']['element_class'] = 'post-category';
   $handler->display->display_options['fields']['fuur_news_category']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['fuur_news_category']['element_wrapper_type'] = '0';
-  $handler->display->display_options['fields']['fuur_news_category']['element_wrapper_class'] = 'post-category';
   $handler->display->display_options['fields']['fuur_news_category']['element_default_classes'] = FALSE;
-  $handler->display->display_options['fields']['fuur_news_category']['field_api_classes'] = TRUE;
   /* Field: Content: Post date */
   $handler->display->display_options['fields']['created']['id'] = 'created';
   $handler->display->display_options['fields']['created']['table'] = 'node';
   $handler->display->display_options['fields']['created']['field'] = 'created';
   $handler->display->display_options['fields']['created']['label'] = '';
-  $handler->display->display_options['fields']['created']['element_class'] = 'post-date';
   $handler->display->display_options['fields']['created']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['created']['element_wrapper_type'] = '0';
+  $handler->display->display_options['fields']['created']['element_wrapper_type'] = 'span';
+  $handler->display->display_options['fields']['created']['element_wrapper_class'] = 'post-date';
+  $handler->display->display_options['fields']['created']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['created']['date_format'] = 'today time ago';
   $handler->display->display_options['fields']['created']['second_date_format'] = 'short';
   /* Sort criterion: Content: Post date */
