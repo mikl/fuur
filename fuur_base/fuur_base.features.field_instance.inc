@@ -48,7 +48,7 @@ function fuur_base_field_default_field_instances() {
         'rows' => 20,
       ),
       'type' => 'text_textarea',
-      'weight' => 3,
+      'weight' => 0,
     ),
   );
 
@@ -110,7 +110,7 @@ function fuur_base_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'media_generic',
-      'weight' => 1,
+      'weight' => -2,
     ),
   );
 
