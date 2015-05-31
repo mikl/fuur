@@ -111,6 +111,7 @@ features[variable][] = node_preview_fuur_page
 features[variable][] = node_submitted_fuur_news
 features[variable][] = node_submitted_fuur_page
 features[variable][] = pathauto_case
+features[variable][] = pathauto_file_pattern
 features[variable][] = pathauto_ignore_words
 features[variable][] = pathauto_max_component_length
 features[variable][] = pathauto_max_length
