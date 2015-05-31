@@ -29,3 +29,4 @@ features[variable][] = field_bundle_settings_node__fuur_incident
 features[variable][] = node_options_fuur_incident
 features[variable][] = node_preview_fuur_incident
 features[variable][] = node_submitted_fuur_incident
+features[variable][] = pathauto_node_fuur_incident_pattern
