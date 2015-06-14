@@ -69,7 +69,7 @@ function fuur_base_views_default_views() {
   $handler->display->display_options['fields']['created']['element_wrapper_type'] = 'span';
   $handler->display->display_options['fields']['created']['element_wrapper_class'] = 'post-date';
   $handler->display->display_options['fields']['created']['element_default_classes'] = FALSE;
-  $handler->display->display_options['fields']['created']['date_format'] = 'today time ago';
+  $handler->display->display_options['fields']['created']['date_format'] = 'short';
   $handler->display->display_options['fields']['created']['second_date_format'] = 'short';
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
