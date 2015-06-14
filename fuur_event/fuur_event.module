@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Füür event feature.
+ */
+
+include_once 'fuur_event.features.inc';
