@@ -1,0 +1,16 @@
+name = Füür slider
+description = Image slider fieldable panels pane, with associated configuration.
+core = 7.x
+package = Füür
+dependencies[] = ctools
+dependencies[] = features
+dependencies[] = fieldable_panels_panes
+dependencies[] = image
+dependencies[] = media
+dependencies[] = slick
+dependencies[] = slick_fields
+features[ctools][] = fieldable_panels_panes:fieldable_panels_pane_type:1
+features[features_api][] = api:2
+features[field_base][] = fuur_slider_images
+features[field_instance][] = fieldable_panels_pane-fuur_slider-fuur_slider_images
+features[fieldable_panels_pane_type][] = fuur_slider

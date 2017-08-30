@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Füür slider feature.
+ */
+
+include_once 'fuur_slider.features.inc';
