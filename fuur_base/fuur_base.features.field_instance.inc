@@ -10,7 +10,7 @@
 function fuur_base_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-fuur_news-fuur_base_body'
+  // Exported field_instance: 'node-fuur_news-fuur_base_body'.
   $field_instances['node-fuur_news-fuur_base_body'] = array(
     'bundle' => 'fuur_news',
     'default_value' => NULL,
@@ -52,7 +52,7 @@ function fuur_base_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-fuur_news-fuur_base_images'
+  // Exported field_instance: 'node-fuur_news-fuur_base_images'.
   $field_instances['node-fuur_news-fuur_base_images'] = array(
     'bundle' => 'fuur_news',
     'deleted' => 0,
@@ -114,7 +114,7 @@ function fuur_base_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-fuur_news-fuur_news_category'
+  // Exported field_instance: 'node-fuur_news-fuur_news_category'.
   $field_instances['node-fuur_news-fuur_news_category'] = array(
     'bundle' => 'fuur_news',
     'default_value' => NULL,
@@ -152,7 +152,7 @@ function fuur_base_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-fuur_page-fuur_base_body'
+  // Exported field_instance: 'node-fuur_page-fuur_base_body'.
   $field_instances['node-fuur_page-fuur_base_body'] = array(
     'bundle' => 'fuur_page',
     'default_value' => NULL,

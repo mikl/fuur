@@ -10,7 +10,7 @@
 function fuur_base_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'fuur_base_body'
+  // Exported field_base: 'fuur_base_body'.
   $field_bases['fuur_base_body'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -29,7 +29,7 @@ function fuur_base_field_default_field_bases() {
     'type' => 'text_long',
   );
 
-  // Exported field_base: 'fuur_base_images'
+  // Exported field_base: 'fuur_base_images'.
   $field_bases['fuur_base_images'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -51,7 +51,7 @@ function fuur_base_field_default_field_bases() {
     'type' => 'image',
   );
 
-  // Exported field_base: 'fuur_news_category'
+  // Exported field_base: 'fuur_news_category'.
   $field_bases['fuur_news_category'] = array(
     'active' => 1,
     'cardinality' => 1,
