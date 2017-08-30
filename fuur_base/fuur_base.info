@@ -94,6 +94,7 @@ features[user_role][] = developer
 features[variable][] = date_popup_timepicker
 features[variable][] = field_bundle_settings_node__fuur_news
 features[variable][] = field_bundle_settings_node__fuur_page
+features[variable][] = fieldable_panels_panes_skip_default_type
 features[variable][] = jquery_update_jquery_admin_version
 features[variable][] = jquery_update_jquery_version
 features[variable][] = language_content_type_fuur_news
